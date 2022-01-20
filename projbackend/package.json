@@ -1,16 +1,10 @@
 {
   "name": "projbackend",
-  "homepage": "https://ganeshbirajdar09.github.io/googledocs-back",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "start": "node server.js",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
