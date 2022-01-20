@@ -10,7 +10,7 @@ mongoose.connect(process.env.DATABASE, {
 
 // we need cors , our client and server both are on diff urls
 // cors helps in making reqs
-const io = require("socket.io")(8080, {
+const io = require("socket.io")(process.env.PORT || 8080, {
   cors: {
     origin: "http://localhost:3000", // where our client is
     methods: ["GET", "POST"], // methods allowed

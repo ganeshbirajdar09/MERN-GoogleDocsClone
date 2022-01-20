@@ -1,16 +1,20 @@
 {
   "name": "projbackend",
+  "homepage": "https://ganeshbirajdar09.github.io/googledocs-back",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^10.0.0",
+    "gh-pages": "^3.2.3",
     "mongoose": "^6.0.12",
     "nodemon": "^2.0.14",
     "socket.io": "^4.3.1"
